@@ -1,0 +1,23 @@
+scoring:
+  claude:
+    enabled: false
+    model: claude-sonnet-4-20250514
+    api_base: https://api.anthropic.com/v1
+    # API key from env: ANTHROPIC_API_KEY
+
+  gemini:
+    enabled: false
+    model: gemini-2.0-flash
+    api_base: https://generativelanguage.googleapis.com/v1beta2
+    # API key from env: GEMINI_API_KEY
+
+  openai:
+    enabled: false
+    model: gpt-4o-mini
+    api_base: https://api.openai.com/v1
+    # API key from env: OPENAI_API_KEY
+  deepseek:
+    enabled: false
+    model: deepseek-translate-eval-20250514
+    api_base: https://api.deepseek.com/v1
+    # API key from env: DEEPSEEK_API_KEY

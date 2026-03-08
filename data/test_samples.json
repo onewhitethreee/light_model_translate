@@ -1,0 +1,56 @@
+[
+  {
+    "source": "发布以上内容，发布者自行承担法律责任、道德风险，且最高可永久封禁社区账号。",
+    "reference": "By posting the above content, the publisher assumes legal responsibility and moral risk, and may be permanently banned from the community account at most.",
+    "src_lang": "zh",
+    "tgt_lang": "en"
+  },
+  {
+    "source": "社区采用账号邀请注册模式，3级账号可邀请。",
+    "reference": "The community adopts an account invitation registration model, where level 3 accounts can invite others.",
+    "src_lang": "zh",
+    "tgt_lang": "en"
+  },
+  {
+    "source": "经常玩隔壁 IDCFlare 站的佬友可能注意到了它的一个功能特性：会给界面、分类、帖子添加一份英文翻译内容。这是一个在 IF. 站灰度使用的功能，倒也不是多新奇的功能，Reddit 已经在这么做了。这么长时间跑下来，tokens 用量还是比较可观的，贵的模型吃不消，便宜的模型效果又不好。为进一步提升佬友和社区的国际影响力，我们希望逐步把这个功能引入 L 站，带着佬友们一起出海，一起站上更大的舞台。但毫无疑问，按照 L 站的内容产出量，收费大模型是用不起的，我们在想是否可以自部署一些不错的小模型来承担这个任务。所以，社区在此悬赏：包括但不限于 qwen 3.5b 等一众自部署小模型对社区内容翻译任务的测评。虽然我们未必会提供这些语言翻译的副本，但希望能对：英文、俄文、德文、日文、韩文其中的一个或多个进行测评。能提供安装部署步骤，参数设置调优的说明，能对社区界面、类别、标签、标题、正文进行翻译测试，提供测评报告。AI 生成内容需要截图发出。",
+    "reference": "Those who frequently use the neighboring site IDCFlare may have noticed its feature: adding an English translation to the interface, categories, and posts. This is a feature being rolled out in a phased rollout on IF., and while it's not exactly new—Reddit has been doing it for a while—the token usage has been considerable. Expensive models can't handle it, while cheaper models don't perform well. To further enhance the international influence of our community and users, we hope to gradually introduce this feature to L., allowing our users to expand overseas and reach a larger audience. However, given L.'s content output, we undoubtedly can't afford large, paid models. We're considering whether we can deploy some decent smaller models to handle this task. Therefore, the community is offering a bounty: evaluations of self-deployed smaller models, including but not limited to qwen 3.5b, for community content translation tasks. While we may not provide copies of these language translations, we hope to receive evaluations of one or more of the following languages: English, Russian, German, Japanese, and Korean. It can provide installation and deployment steps, parameter setting and optimization instructions, and can translate and test the community interface, categories, tags, titles, and body text, providing an evaluation report. Screenshots of AI-generated content are required for submission.",
+    "src_lang": "zh",
+    "tgt_lang": "en"
+  },
+  {
+    "source" : "政治相关。我们不讨论、评价国家政策及国家领导人。若你在其他平台有此类负面发言，这里也不欢迎你。",
+    "reference" : "Political related. We do not discuss or evaluate national policies and national leaders. If you have such negative remarks on other platforms, you are also not welcome here.",
+    "src_lang" : "zh",
+    "tgt_lang" : "en"
+  },
+  {
+    "source" : "血腥、暴力、赌博、毒品、涉黑相关。若你在其他平台有此类负面发言，这里也不欢迎你。",
+    "reference" : "Bloody, violent, gambling, drugs, and gang-related content. If you have such negative remarks on other platforms, you are also not welcome here.",
+    "src_lang" : "zh",
+    "tgt_lang" : "en"
+  },
+  {
+    "source": "举报是匿名的，社区永远不会透露举报人信息。举报是共建、共同维护社区的有效方式。被举报的帖子需要管理审批处理。",
+    "reference": "Reporting is anonymous, and the community will never disclose the information of the reporter. Reporting is an effective way to co-build and maintain the community together. Reported posts require management approval and processing.",
+    "src_lang": "zh",
+    "tgt_lang": "en"
+  },
+  {
+    "source": "总的来说，本着我为人人、人人为我的原则，真诚、友善地对待他人，不以一己私利为重，就不会有问题。希望你在这里玩得愉快！",
+    "reference": "In general, if you adhere to the principle of \"I for everyone, everyone for me,\" treat others sincerely and kindly, and don't prioritize your own selfish interests, there won't be any problems. Hope you have a great time here!",
+    "src_lang": "zh",
+    "tgt_lang": "en"
+  },
+  {
+    "source" : "佬友们还是非常强大的，什么项目都能找到空子刷一刷。不过这种活跃与创造力，也正是 L 站的魅力所在。",
+    "reference" : "The users here are incredibly resourceful; they can find loopholes to exploit in any project. But this activity and creativity is precisely what makes L Station so appealing.",
+    "src_lang" : "zh",
+    "tgt_lang" : "en"
+  },
+  {
+    "source": "我非常感激佬友们对 LINUX DO 的喜爱与支持，也非常明白你们希望加入讨论的迫切心情。但所谓欲速则不达，我还是恳求希望加入的佬友们能看一看这个帖子再做账号申请，以增加成功率和申请效率。",
+    "reference": "I am very grateful for the love and support of the users for LINUX DO, and I understand your eagerness to join the discussion. However, as the saying goes, \"Haste makes waste,\" I sincerely request that those who wish to join take a look at this post before applying for an account, to increase the success rate and efficiency of the application.",
+    "src_lang": "zh",
+    "tgt_lang": "en"
+  }
+]

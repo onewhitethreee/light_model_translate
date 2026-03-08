@@ -1,0 +1,19 @@
+models:
+  nllb-200-distilled-600M:
+    type: nllb
+    model_name: facebook/nllb-200-distilled-600M
+    description: "Meta NLLB-200 蒸馏版, 600M 参数, 支持 200+ 语言"
+
+  m2m100-418M:
+    type: m2m100
+    model_name: facebook/m2m100_418M
+    description: "Meta M2M-100, 418M 参数, 支持 100 语言"
+
+  qwen2.5-3b:
+    type: qwen
+    model_name: Qwen/Qwen2.5-3B-Instruct
+    description: "Qwen2.5 3B 指令模型, 通用 LLM"
+  SmolLM3-3B:
+    type: smollm
+    model_name: HuggingFaceTB/SmolLM3-3B
+    description: "SmolLM3 3B 参数"
