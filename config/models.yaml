@@ -17,3 +17,7 @@ models:
     type: smollm
     model_name: HuggingFaceTB/SmolLM3-3B
     description: "SmolLM3 3B 参数"
+  HY-MT1.5-1.8B:
+    type: tencent
+    model_name: tencent/HY-MT1.5-1.8B
+    description: "腾讯 HY-MT1.5 1.8B 参数"

@@ -133,3 +133,11 @@ scoring:
 
 其中`source`为源文本，`reference`为参考翻译(Google translate)，`translation`为模型翻译结果，`src_lang`和`tgt_lang`分别为源语言和目标语言，`bleu`和`chrf`分别为BLEU得分和CHRF得分，`time_seconds`为模型翻译所花费的时间（单位为秒）, avg_llm_score为外部LLM打分的平均分，满分十分。
 
+介绍完整个评测流程和结果的格式后，接下来我们就可以开始正式的评测了。
+
+本次采用的测试数据为L站的社区规则和站长的帖子中的一些内容。
+
+# 评测结果分析
+
+评测结果保存在`results`文件夹中，每个模型的评测结果会保存在一个单独的文件中。在本次测试中一共使用了五个模型，分别是nllb-200-distilled-600M、m2m100-418M、qwen2.5-3b，SmolLM3-3B和HY-MT1.5-1.8B。
+

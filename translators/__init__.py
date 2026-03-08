@@ -5,11 +5,13 @@ from .m2m100 import M2M100Translator
 from .nllb import NLLBTranslator
 from .qwen import QwenTranslator
 from .smolLM3 import SmolLMTranslator
+from .hy_mt import HYMTTranslator
 TRANSLATOR_REGISTRY: dict[str, type[BaseTranslator]] = {
     "nllb": NLLBTranslator,
     "m2m100": M2M100Translator,
     "qwen": QwenTranslator,
     "smollm": SmolLMTranslator,
+    "tencent": HYMTTranslator,
 }
 
 
