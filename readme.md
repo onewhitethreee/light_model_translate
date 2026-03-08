@@ -101,4 +101,20 @@ scoring:
 
 评测的结果会保存在`results`文件夹中，每个模型的评测结果会保存在一个单独的文件中。
 
+评测结果的格式为JSON，包含了每个测试数据的源文本、参考翻译、模型翻译结果、BLEU得分、CHRF得分以及外部LLM打分（如果启用了的话）。
+
+```
+{
+      "source": "我非常感激佬友们对 LINUX DO 的喜爱与支持，也非常明白你们希望加入讨论的迫切心情。但所谓欲速则不达，我还是恳求希望加入的佬友们能看一看这个帖子再做账号申请，以增加成功率和申请效率。",
+      "reference": "I am very grateful for the love and support of the users for LINUX DO, and I understand your eagerness to join the discussion. However, as the saying goes, \"Haste makes waste,\" I sincerely request that those who wish to join take a look at this post before applying for an account, to increase the success rate and efficiency of the application.",
+      "translation": "I am very grateful for your love and support of LINUX DO, and I fully understand your urgent desire to join in the discussion. But haste makes waste, so I still kindly request that those who wish to join look at this post before applying for an account, in order to increase both success rate and application efficiency.",
+      "src_lang": "zh",
+      "tgt_lang": "en",
+      "bleu": 41.01,
+      "chrf": 68.33,
+      "time_seconds": 2.398
+    }
+```
+
+其中`source`为源文本，`reference`为参考翻译(Google translate)，`translation`为模型翻译结果，`src_lang`和`tgt_lang`分别为源语言和目标语言，`bleu`和`chrf`分别为BLEU得分和CHRF得分，`time_seconds`为模型翻译所花费的时间（单位为秒）。
 
