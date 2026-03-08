@@ -20,3 +20,4 @@ models_cache/
 venv/
 .venv/
 .ruff_cache/
+config/scoring.yaml

@@ -17,7 +17,7 @@ scoring:
     api_base: https://api.openai.com/v1
     # API key from env: OPENAI_API_KEY
   deepseek:
-    enabled: true
+    enabled: false
     model: deepseek-chat
     api_base: https://api.deepseek.com/v1
     # API key from env: DEEPSEEK_API_KEY
