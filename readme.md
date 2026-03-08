@@ -22,6 +22,13 @@
 
 > chrF 是一种自动评估指标，通过比较字符序列而不是完整单词，来评估候选文本（例如，机器翻译的输出）与一个或多个参考文本之间的相似度. 它计算了候选文本和参考文本之间的字符n-gram的精确度和召回率，并将它们结合成一个综合得分。chrF得分越高，表示候选文本与参考文本之间的相似度越高。
 
+## 主观评测
+
+我将采用及格和不及格两级评分标准来进行主观评测，具体标准如下：
+
+及格：翻译结果能表达原文的基本意思且翻译结果无其他的内容
+
+不及格：翻译结果无法表达原文的基本意思，或者翻译结果中包含了原文没有的内容
 
 # 环境安装
 
@@ -105,16 +112,24 @@ scoring:
 
 ```
 {
-      "source": "我非常感激佬友们对 LINUX DO 的喜爱与支持，也非常明白你们希望加入讨论的迫切心情。但所谓欲速则不达，我还是恳求希望加入的佬友们能看一看这个帖子再做账号申请，以增加成功率和申请效率。",
-      "reference": "I am very grateful for the love and support of the users for LINUX DO, and I understand your eagerness to join the discussion. However, as the saying goes, \"Haste makes waste,\" I sincerely request that those who wish to join take a look at this post before applying for an account, to increase the success rate and efficiency of the application.",
-      "translation": "I am very grateful for your love and support of LINUX DO, and I fully understand your urgent desire to join in the discussion. But haste makes waste, so I still kindly request that those who wish to join look at this post before applying for an account, in order to increase both success rate and application efficiency.",
+      "source": "血腥、暴力、赌博、毒品、涉黑相关。若你在其他平台有此类负面发言，这里也不欢迎你。",
+      "reference": "Bloody, violent, gambling, drugs, and gang-related content. If you have such negative remarks on other platforms, you are also not welcome here.",
+      "translation": "Bloody, violent, gambling, drugs, and related to organized crime. You are also not welcome here if you have negative comments on these topics on other platforms.",
       "src_lang": "zh",
       "tgt_lang": "en",
-      "bleu": 41.01,
-      "chrf": 68.33,
-      "time_seconds": 2.398
-    }
+      "bleu": 42.83,
+      "chrf": 70.1,
+      "time_seconds": 1.258,
+      "llm_scores": {
+        "deepseek": {
+          "score": 9.0,
+          "explanation": "The translation is highly accurate, capturing the meaning of the source text precisely, including the nuanced '涉黑' as 'organized crime'. It is fluent and grammatically correct, with only a minor stylistic difference in phrasing ('on these topics' vs. 'such') that does not affect meaning. Terminology is handled correctly.",
+          "model": "deepseek-chat"
+        }
+      },
+      "avg_llm_score": 9.0
+},
 ```
 
-其中`source`为源文本，`reference`为参考翻译(Google translate)，`translation`为模型翻译结果，`src_lang`和`tgt_lang`分别为源语言和目标语言，`bleu`和`chrf`分别为BLEU得分和CHRF得分，`time_seconds`为模型翻译所花费的时间（单位为秒）。
+其中`source`为源文本，`reference`为参考翻译(Google translate)，`translation`为模型翻译结果，`src_lang`和`tgt_lang`分别为源语言和目标语言，`bleu`和`chrf`分别为BLEU得分和CHRF得分，`time_seconds`为模型翻译所花费的时间（单位为秒）, avg_llm_score为外部LLM打分的平均分，满分十分。
 

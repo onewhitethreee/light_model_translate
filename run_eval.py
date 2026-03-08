@@ -9,7 +9,7 @@ import yaml
 
 from evaluation.runner import evaluate_model, load_test_cases, print_comparison
 from scoring import ScoringManager
-
+from dotenv import load_dotenv
 
 def main():
     parser = argparse.ArgumentParser(description="Translation model evaluation")
@@ -35,6 +35,7 @@ def main():
         action="store_true",
         help="Disable LLM scoring even if configured",
     )
+    load_dotenv()
     args = parser.parse_args()
 
     with open(args.config, "r", encoding="utf-8") as f:
