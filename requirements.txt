@@ -1,0 +1,11 @@
+torch
+transformers
+sacrebleu
+tabulate
+tqdm
+PyYAML
+python-dotenv
+anthropic
+openai
+google-genai
+accelerate
